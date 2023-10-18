@@ -1,0 +1,290 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                background-color: #f5f5f5;
+            }
+
+            svg {
+                background-color: white;
+                border: 1px solid black;
+            }
+
+            svg path {
+                stroke-width: 4px;
+            }
+
+            svg text {
+                font-size: 20px;
+                font-family: Verdana;
+            }
+
+            /* svg title */
+            #title {
+                /* middle */
+                text-anchor: middle;
+                /* bold */
+                font-weight: bold;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <svg viewBox="0 0 2300 1300" width="2300" height="1300">
+
+            
+            <!-- Define the horizontal lines for the grid -->
+            <!-- <line x1="200" y1="1000" x2="1950" y2="1000" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0900" x2="1950" y2="0900" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0800" x2="1950" y2="0800" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0700" x2="1950" y2="0700" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0600" x2="1950" y2="0600" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0500" x2="1950" y2="0500" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0400" x2="1950" y2="0400" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0300" x2="1950" y2="0300" stroke="black" stroke-width="0.3" />
+            <line x1="200" y1="0200" x2="1950" y2="0200" stroke="black" stroke-width="0.3" /> -->
+
+            <!-- Y1 axis texts (float numbers) -->
+            <!-- x = level x - 50 -->
+            <!-- y = base y + 5 -->
+            <text x="150" y="1005" font-size="20" fill="black" font-family="Verdana">0.0</text>
+            <text x="150" y="0905" font-size="20" fill="black" font-family="Verdana">1.0</text>
+            <text x="150" y="0805" font-size="20" fill="black" font-family="Verdana">2.0</text>
+            <text x="150" y="0705" font-size="20" fill="black" font-family="Verdana">3.0</text>
+            <text x="150" y="0605" font-size="20" fill="black" font-family="Verdana">4.0</text>
+            <text x="150" y="0505" font-size="20" fill="black" font-family="Verdana">5.0</text>
+            <text x="150" y="0405" font-size="20" fill="black" font-family="Verdana">6.0</text>
+            <text x="150" y="0305" font-size="20" fill="black" font-family="Verdana">7.0</text>
+            <text x="150" y="0205" font-size="20" fill="black" font-family="Verdana">8.0</text>
+
+            <!-- Y2 axis texts (Hundred thousands numbers) -->
+            <!-- x = end level x + 20 -->
+            <!-- y = base y + 5 -->
+            <text x="1970" y="1005" font-size="20" fill="black" font-family="Verdana">0</text>
+            <text x="1970" y="0905" font-size="20" fill="black" font-family="Verdana">100 000</text>
+            <text x="1970" y="0805" font-size="20" fill="black" font-family="Verdana">200 000</text>
+            <text x="1970" y="0705" font-size="20" fill="black" font-family="Verdana">300 000</text>
+            <text x="1970" y="0605" font-size="20" fill="black" font-family="Verdana">400 000</text>
+            <text x="1970" y="0505" font-size="20" fill="black" font-family="Verdana">500 000</text>
+            <text x="1970" y="0405" font-size="20" fill="black" font-family="Verdana">600 000</text>
+            <text x="1970" y="0305" font-size="20" fill="black" font-family="Verdana">700 000</text>
+            <text x="1970" y="0205" font-size="20" fill="black" font-family="Verdana">800 000</text>
+
+
+
+            <!-- Define the x-axis -->
+            <line x1="200" y1="1000" x2="1950" y2="1000" stroke="black" stroke-width="0.9" />
+
+            <!-- Define the y1-axis -->
+            <line x1="200" y1="1000" x2="200" y2="200" stroke="black" stroke-width="0.9" />
+
+            <!-- Define y2-axis -->
+            <line x1="1950" y1="1000" x2="1950" y2="200" stroke="black" stroke-width="0.9" />
+
+            <!-- Y1 axis arrow triangle -->
+            <!-- <polygon points="200,200 190,225 210,225" fill="black"  fill-opacity="0.9" /> -->
+
+            <!-- Y2 axis arrow triangle -->
+            <!-- <polygon points="1950,200 1940,225 1960,225" fill="black"  fill-opacity="0.9" /> -->
+
+            <!-- X axis texts (years) -->
+            <!-- (base x - 25) -->
+            <!-- (level y + 50) -->
+            <text x="275" y="1050" font-size="20" fill="black" font-family="Verdana">2009</text>
+            <text x="395" y="1050" font-size="20" fill="black" font-family="Verdana">2010</text>
+            <text x="515" y="1050" font-size="20" fill="black" font-family="Verdana">2011</text>
+            <text x="635" y="1050" font-size="20" fill="black" font-family="Verdana">2012</text>
+            <text x="755" y="1050" font-size="20" fill="black" font-family="Verdana">2013</text>
+            <text x="875" y="1050" font-size="20" fill="black" font-family="Verdana">2014</text>
+            <text x="995" y="1050" font-size="20" fill="black" font-family="Verdana">2015</text>
+            <text x="1115" y="1050" font-size="20" fill="black" font-family="Verdana">2016</text>
+            <text x="1235" y="1050" font-size="20" fill="black" font-family="Verdana">2017</text>
+            <text x="1355" y="1050" font-size="20" fill="black" font-family="Verdana">2018</text>
+            <text x="1475" y="1050" font-size="20" fill="black" font-family="Verdana">2019</text>
+            <text x="1595" y="1050" font-size="20" fill="black" font-family="Verdana">2020</text>
+            <text x="1715" y="1050" font-size="20" fill="black" font-family="Verdana">2021</text>
+            <text x="1835" y="1050" font-size="20" fill="black" font-family="Verdana">2022</text>
+
+
+
+
+            <!-- Data Points: cx = (same as years),  cy = (given below) -->
+            <!-- 486,8	499,0	493,2	499,1	510,1	493,3	481,5	466,5	468,5	475,7	471,3	389,5	326,8	405,9 -->
+            <!-- The cy coordinate calcuations come from excel, thats why there is a comma/dot in them (they are precise) -->
+            <!-- (base x) -->
+            <!-- Y coordinate is done according to the formula in my report. -->
+            <circle cx="0300" cy="486.8" r="5" fill="#a8151a" />
+            <circle cx="0420" cy="499.0" r="5" fill="#a8151a" />
+            <circle cx="0540" cy="493.2" r="5" fill="#a8151a" />
+            <circle cx="0660" cy="499.1" r="5" fill="#a8151a" />
+            <circle cx="0780" cy="510.1" r="5" fill="#a8151a" />
+            <circle cx="0900" cy="493.3" r="5" fill="#a8151a" />
+            <circle cx="1020" cy="481.5" r="5" fill="#a8151a" />
+            <circle cx="1140" cy="466.5" r="5" fill="#a8151a" />
+            <circle cx="1260" cy="468.5" r="5" fill="#a8151a" />
+            <circle cx="1380" cy="475.7" r="5" fill="#a8151a" />
+            <circle cx="1500" cy="471.3" r="5" fill="#a8151a" />
+            <circle cx="1620" cy="389.5" r="5" fill="#a8151a" />
+            <circle cx="1740" cy="326.8" r="5" fill="#a8151a" />
+            <circle cx="1860" cy="405.9" r="5" fill="#a8151a" />
+
+            <!-- Connecting the dots with path -->
+            <path d="M300,486.8 L420,499.0 L540,493.2 L660,499.1 L780,510.1 L900,493.3 L1020,481.5 L1140,466.5 L1260,468.5 L1380,475.7 L1500,471.3 L1620,389.5 L1740,326.8 L1860,405.9" stroke="#a8151a" stroke-width="0.9" fill="none" />
+
+            <!-- Data Texts: x = (same as years),  y = (given below) -->
+            <!-- 466,8	479,0	473,2	479,1	490,1	473,3	461,5	446,5	448,5	455,7	451,3	369,5	306,8	385,9 -->
+            <!-- The y coordinate calcuations come from excel, thats why there is a comma/dot in them (they are precise) -->
+            <!-- (base x - 15) -->
+            <!-- Y coordinate calculation is done according to the previous formula in my report (minus 20 px). -->
+
+            <text x="285" y="466.8" font-size="20" fill="black" font-family="Verdana">5,13</text>
+            <text x="405" y="479.0" font-size="20" fill="black" font-family="Verdana">5,01</text>
+            <text x="525" y="473.2" font-size="20" fill="black" font-family="Verdana">5,07</text>
+            <text x="645" y="479.1" font-size="20" fill="black" font-family="Verdana">5,01</text>
+            <text x="765" y="490.1" font-size="20" fill="black" font-family="Verdana">4,90</text>
+            <text x="885" y="473.3" font-size="20" fill="black" font-family="Verdana">5,07</text>
+            <text x="1005" y="461.5" font-size="20" fill="black" font-family="Verdana">5,18</text>
+            <text x="1125" y="446.5" font-size="20" fill="black" font-family="Verdana">5,34</text>
+            <text x="1245" y="448.5" font-size="20" fill="black" font-family="Verdana">5,31</text>
+            <text x="1365" y="455.7" font-size="20" fill="black" font-family="Verdana">5,24</text>
+            <text x="1485" y="451.3" font-size="20" fill="black" font-family="Verdana">5,29</text>
+            <text x="1605" y="369.5" font-size="20" fill="black" font-family="Verdana">6,10</text>
+            <text x="1725" y="306.8" font-size="20" fill="black" font-family="Verdana">6,73</text>
+            <text x="1845" y="385.9" font-size="20" fill="black" font-family="Verdana">5,94</text>
+            
+            <!-- Vertical lines for the grid -->
+            <!-- (base x) -->
+            <!-- <line x1="300" y1="1000" x2="300" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="420" y1="1000" x2="420" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="540" y1="1000" x2="540" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="660" y1="1000" x2="660" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="780" y1="1000" x2="780" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="900" y1="1000" x2="900" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1020" y1="1000" x2="1020" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1140" y1="1000" x2="1140" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1260" y1="1000" x2="1260" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1380" y1="1000" x2="1380" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1500" y1="1000" x2="1500" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1620" y1="1000" x2="1620" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1740" y1="1000" x2="1740" y2="200" stroke="black" stroke-width="0.3" />
+            <line x1="1860" y1="1000" x2="1860" y2="200" stroke="black" stroke-width="0.3" /> -->
+
+            <!-- Year separators -->
+            <!-- (base x + 60) -->
+            <!-- (Level y to 10 lower) -->
+            <line x1="360" y1="1010" x2="360" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="480" y1="1010" x2="480" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="600" y1="1010" x2="600" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="720" y1="1010" x2="720" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="840" y1="1010" x2="840" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="960" y1="1010" x2="960" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1080" y1="1010" x2="1080" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1200" y1="1010" x2="1200" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1320" y1="1010" x2="1320" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1440" y1="1010" x2="1440" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1560" y1="1010" x2="1560" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1680" y1="1010" x2="1680" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1800" y1="1010" x2="1800" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1920" y1="1010" x2="1920" y2="1000" stroke="black" stroke-width="0.9" />
+
+            <!-- Y1 axis separators -->
+            <!-- (level x to 10 lower) -->
+            <!-- (base y) -->
+            <line x1="190" y1="1000" x2="200" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="900" x2="200" y2="900" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="800" x2="200" y2="800" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="700" x2="200" y2="700" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="600" x2="200" y2="600" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="500" x2="200" y2="500" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="400" x2="200" y2="400" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="300" x2="200" y2="300" stroke="black" stroke-width="0.9" />
+            <line x1="190" y1="200" x2="200" y2="200" stroke="black" stroke-width="0.9" />
+
+            <!-- Y2 axis separators -->
+            <!-- (level x to 10 higher) -->
+            <!-- (base y) -->
+            <line x1="1950" y1="1000" x2="1960" y2="1000" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="900" x2="1960" y2="900" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="800" x2="1960" y2="800" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="700" x2="1960" y2="700" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="600" x2="1960" y2="600" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="500" x2="1960" y2="500" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="400" x2="1960" y2="400" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="300" x2="1960" y2="300" stroke="black" stroke-width="0.9" />
+            <line x1="1950" y1="200" x2="1960" y2="200" stroke="black" stroke-width="0.9" />
+
+            <!-- Bars for barchart -->
+            <!-- (base x - width / 2) -->
+            <!-- (level y - height) -->
+            <!-- (height = given below) -->
+            <!-- (width = 50) -->
+            <!-- 370	366	376	377	373	391	406	423	427	427	437	509	566	505 -->
+            <rect x="0275" y="630" width="50" height="370" fill="#2581c4" />
+            <rect x="0395" y="634" width="50" height="366" fill="#2581c4" />
+            <rect x="0515" y="624" width="50" height="376" fill="#2581c4" />
+            <rect x="0635" y="623" width="50" height="377" fill="#2581c4" />
+            <rect x="0755" y="627" width="50" height="373" fill="#2581c4" />
+            <rect x="0875" y="609" width="50" height="391" fill="#2581c4" />
+            <rect x="0995" y="594" width="50" height="406" fill="#2581c4" />
+            <rect x="1115" y="577" width="50" height="423" fill="#2581c4" />
+            <rect x="1235" y="573" width="50" height="427" fill="#2581c4" />
+            <rect x="1355" y="573" width="50" height="427" fill="#2581c4" />
+            <rect x="1475" y="563" width="50" height="437" fill="#2581c4" />
+            <rect x="1595" y="491" width="50" height="509" fill="#2581c4" />
+            <rect x="1715" y="434" width="50" height="566" fill="#2581c4" />
+            <rect x="1835" y="495" width="50" height="505" fill="#2581c4" />
+
+            <!-- Bar Texts: x = (same as years),  y = (level y - 20), data = (given below) -->
+            <!--  369 703	 366 471	 376 162	 376 520	 373 041	 391 091	 405 528	 422 964	 426 857	 426 785	 436 624	 509 048	 566 485	 504 839 -->
+            <!-- These texts are vertically rotated, they will be inside the bars. -->
+            <!-- (base x  + 10) -->
+            <!-- (level y - 20) -->
+            <text x="0310" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 310,980)">369 703</text>
+            <text x="0430" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 430,980)">366 471</text>
+            <text x="0550" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 550,980)">376 162</text>
+            <text x="0670" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 670,980)">376 520</text>
+            <text x="0790" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 790,980)">373 041</text>
+            <text x="0910" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 910,980)">391 091</text>
+            <text x="1030" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1030,980)">405 528</text>
+            <text x="1150" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1150,980)">422 964</text>
+            <text x="1270" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1270,980)">426 857</text>
+            <text x="1390" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1390,980)">426 785</text>
+            <text x="1510" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1510,980)">436 624</text>
+            <text x="1630" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1630,980)">509 048</text>
+            <text x="1750" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1750,980)">566 485</text>
+            <text x="1870" y="980" font-size="20" fill="white" font-family="Verdana" transform="rotate(-90 1870,980)">504 839</text>
+
+            <!-- Axis texts -->
+            <!-- x = 150, y = axis y -->
+            <text x="165" y="150" font-size="20" fill="black" font-family="Verdana">(Binde)</text>
+            <text x="1900" y="150" font-size="20" fill="black" font-family="Verdana">(Ölüm Sayısı)</text>
+
+            <!-- Title -->
+            <!-- x = 1000, y = 100 -->
+            <text id = "title" x="1000" y="100" font-size="40" fill="black" font-family="Verdana">Türkiye'de Ölüm Sayısı ve Kaba Ölüm Hızı, 2009-2022</text>
+
+
+            <!-- Legend -->
+            <!-- x = 100, y = 1100 -->
+            <text x="100" y="1100" font-size="20" fill="black" font-family="Verdana">Kaba Ölüm Hızı</text>
+            <!-- x = 100, y = 1150 -->
+            <text x="100" y="1150" font-size="20" fill="black" font-family="Verdana">Ölüm Sayısı</text>
+
+            <!-- Legend Rectangles -->
+            <!-- x = 50, y = 1080 -->
+            <rect x="50" y="1090" width="40" height="10" fill="#a8151a" />
+            <circle cx="70" cy="1095" r="10" fill="#a8151a" />
+
+            <!-- Legend Rectangles -->
+            <!-- x = 50, y = 1140 -->
+            <rect x="50" y="1140" width="40" height="10" fill="#2581c4" />
+
+
+        </svg>
+    </body>
+</html>
